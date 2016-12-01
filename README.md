@@ -1,7 +1,7 @@
 #barcode_extracter :monkey:
 
 This is python code used to extract cellular barcoding data from FASTQ files.
-Final output is a table with cellular barcode sequences as row names, and FASTQ files as columns and counts corresponding to each barcode present within that FASTQ file.
+Final output is a table with cellular barcode sequences as row names, and FASTQ files as columns and counts corresponding to each barcode present within that FASTQ file. Originally created for use with cellular barcoding experiments in Cynthia E. Dunbar's laboratory at the National Institutes of Health, Bethesda, MD.
 
 Code by Diego A. Espinoza<sup>1</sup>, Samson J. Koelle<sup>1</sup>, and Rong Lu<sup>2</sup>.
 
