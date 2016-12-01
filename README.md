@@ -15,7 +15,8 @@ Please use the following steps to extract cellular barcode data from FASTQ files
 2. Place "extract_barcodes.py" in the same directory.
 3. Run "extract_barcodes.py" within that directory as shown:
   1. NOTE: If a *.bin file exists with extracted FASTQ file data, you can add new data to this existing extraction. To do this, the existing *.bin file should be placed in same directory as FASTQ files and code, and BOOLEAN and OLDFILE options should be used correctly as specified below. Adding data to existing extraction in this way excludes re-extraction of any FASTQ files in existing *.bin extraction that may be in the directory.
-```
+  
+    ```
 python extract_barcodes.py BOOLEAN OLDFILE LIBID BARCODELENGTH THRESH OUTFILENAME
 
 BOOLEAN             = Y if existing *.bin file with extracted data exists and need to add new data to old *.bin file
@@ -37,7 +38,7 @@ python extract_barcodes.py Y ZH33_extracted_20160730.bin GTAGCC 35 100 ZH33_extr
 4. Once extract_barcodes.py is finished, run "combine_barcodes.py" in same directory where pickled output of "extracted_barcodes.py" is located.
   1. NOTE: In order to run efficiently on cluster systems, exclusive node allocation is necessary to preform multi-core processing.
 
-```
+    ```
 python combine_barcodes.py EXTRACTEDFILENAME FINALFILENAME LIBID BARCODELENGTH MAXMISMATCHES CORES
 
 EXTRACTEDFILENAME   = file name of extract_barcodes.py output
