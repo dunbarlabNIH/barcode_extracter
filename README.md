@@ -20,9 +20,9 @@ Please use the following steps to extract cellular barcode data from FASTQ files
 python extract_barcodes.py BOOLEAN OLDFILE LIBID BARCODELENGTH THRESH OUTFILENAME
 
 BOOLEAN             = Y if existing *.bin file with extracted data exists and need to add new data to old *.bin file
-                      N if no *.bin file with extracted data exists
+                              N if no *.bin file with extracted data exists
 OLDFILE             = if BOOLEAN is Y, must be name of *.bin file in directory with extracted data
-                      if BOOLEAN is N, use X as argument
+                              if BOOLEAN is N, use X as argument
 LIBID               = 6 base pair DNA sequence of correct library ID
 BARCODELENGTH       = length of barcodes in library
 THRESH              = sequence read threshold that barcode must pass to be stored for each FASTQ file
